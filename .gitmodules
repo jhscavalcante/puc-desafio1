@@ -1,0 +1,3 @@
+[submodule "landing-page"]
+	path = landing-page
+	url = /landing-page
