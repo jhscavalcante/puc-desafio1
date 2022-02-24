@@ -1,0 +1,36 @@
+{
+  "translation": {
+
+    "about_title": "Sobre",
+
+    "contacts_title": "Contatos",
+
+    "footer_social_networks": "Siga nossas redes sociais",
+    "footer_experienced_professional": "Sua obra planejada com uma experiente profissional",
+    "footer_articles": "Artigos",
+    "footer_terms_conditions": "Termos & Condições",
+    "footer_privacy_policy": "Política de privacidade",
+    "footer_rights_reserved": "Todos os direitos reservados ©",
+    "footer_developed_by": "Desenvolvido por",
+    "footer_developer_name": "TI Cavalcante",
+
+    "header_occupation": "Arquiteta",
+    "header_link_services": "Serviços",
+    "header_link_about": "Sobre",
+    "header_link_contacts": "Contatos",
+
+    "register_title": "Arquitetura & Design",
+    "register_description_p1": "A arquitetura compreende a arte ou técnica de projetar uma edificação ou ambiente em que há construção. A atividade leva em conta os princípios, técnicas, normas e materiais que o profissional de arquitetura utiliza para criar um espaço.",
+    "register_description_p2": "Fique por dentro das novidades, realizando o cadastro em nosso site. Além disso, você pode receber descontos através de cupons que são sorteados semanalmente.",
+    "register_form_title": "Cadastre-se no site",
+    "register_form_field_firstname": "Nome",
+    "register_form_field_lastname": "Sobrenome",
+    "register_form_field_email": "E-mail",
+    "register_form_field_password": "Senha",
+    "register_form_field_btn_save": "Registrar",
+
+    "services_title": "Serviços",
+
+    "testimonies_title": "Depoimentos"
+  }
+}

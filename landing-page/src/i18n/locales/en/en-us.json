@@ -1,0 +1,36 @@
+{
+  "translation": {
+
+    "about_title": "About",
+
+    "contacts_title": "Contacts",
+
+    "footer_social_networks": "Follow our social networks",
+    "footer_experienced_professional": "Your work planned with an experienced professional",
+    "footer_articles": "Articles",
+    "footer_terms_conditions": "Terms & Conditions",
+    "footer_privacy_policy": "Privacy Policy",
+    "footer_rights_reserved": "All rights reserved ©",
+    "footer_developed_by": "Developed by",
+    "footer_developer_name": "TI Cavalcante",
+
+    "header_occupation": "Architect",
+    "header_link_services": "Services",
+    "header_link_about": "About",
+    "header_link_contacts": "Contacts",
+
+    "register_title": "Architecture & Design",
+    "register_description_p1": "Architecture comprises the art or technique of designing a building or environment in which there is construction. The activity takes into account the principles, techniques, standards and materials that the architectural professional uses to create a space.",
+    "register_description_p2": "Stay up to date with the news by registering on our website. In addition, you can receive discounts through coupons that are drawn weekly.",
+    "register_form_title": "Register on the website",
+    "register_form_field_firstname": "First name",
+    "register_form_field_lastname": "Last name",
+    "register_form_field_email": "Email",
+    "register_form_field_password": "Password",
+    "register_form_field_btn_save": "Register",
+
+    "services_title": "Services",
+
+    "testimonies_title": "Testimonies"
+  }
+}
