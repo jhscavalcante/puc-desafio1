@@ -5,14 +5,12 @@ const User = require('./User');
 
 sequelize.sync({force: true}).then(() => console.log('db criado'));
 const app = express();
-
+const port = 3001;
 
 app.use(cors())
-
 app.use(express.json());
 
 // User
-
 app.get('/users', async (req, res) => {
     const users = await User.findAll();
     res.send(users);
@@ -43,6 +41,6 @@ app.delete('/users/:id', async (req, res) => {
     res.send('Usuário deletado com sucesso');
 });
 
-app.listen(3001, () => {
-    console.log('app is running');
+app.listen(port, () => {
+    console.log(`app is running ${port}`);
 })
