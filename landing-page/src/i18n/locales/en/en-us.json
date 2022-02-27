@@ -17,6 +17,7 @@
     "header_link_services": "Services",
     "header_link_about": "About",
     "header_link_contacts": "Contacts",
+    "header_link_users": "Users",
 
     "register_title": "Architecture & Design",
     "register_description_p1": "Architecture comprises the art or technique of designing a building or environment in which there is construction. The activity takes into account the principles, techniques, standards and materials that the architectural professional uses to create a space.",
@@ -32,6 +33,9 @@
 
     "services_title": "Services",
 
-    "testimonies_title": "Testimonies"
+    "testimonies_title": "Testimonies",
+
+    "users_title": "Registered users",
+    "users_list_empty": "No user has been registered."
   }
 }

@@ -17,6 +17,7 @@
     "header_link_services": "Serviços",
     "header_link_about": "Sobre",
     "header_link_contacts": "Contatos",
+    "header_link_users": "Usuários",
 
     "register_title": "Arquitetura & Design",
     "register_description_p1": "A arquitetura compreende a arte ou técnica de projetar uma edificação ou ambiente em que há construção. A atividade leva em conta os princípios, técnicas, normas e materiais que o profissional de arquitetura utiliza para criar um espaço.",
@@ -32,6 +33,9 @@
 
     "services_title": "Serviços",
 
-    "testimonies_title": "Depoimentos"
+    "testimonies_title": "Depoimentos",
+
+    "users_title": "Usuários cadastrados",
+    "users_list_empty": "Nenhum usuário foi cadastrado."
   }
 }

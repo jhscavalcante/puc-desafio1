@@ -67,6 +67,15 @@ export const Header = () => {
                 {t('header_link_contacts')}
               </NavLink>
             </li>
+            <li className='nav-item'>
+              <NavLink
+                className={'nav-link'}
+                activeClassName='active'
+                to='/usuarios'
+              >
+                {t('header_link_users')}
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
