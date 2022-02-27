@@ -1,7 +1,7 @@
 import { Layout } from '../../components/Layout'
 import { useTranslation } from 'react-i18next'
 
-export const Services = () => {
+const Services = () => {
   const { t } = useTranslation()
 
   return (
@@ -12,3 +12,5 @@ export const Services = () => {
     </Layout>
   )
 }
+
+export default Services

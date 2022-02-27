@@ -1,7 +1,7 @@
 import { Layout } from '../../components/Layout'
 import { useTranslation } from 'react-i18next'
 
-export const About = () => {
+const About = () => {
   const { t } = useTranslation()
 
   return (
@@ -12,3 +12,5 @@ export const About = () => {
     </Layout>
   )
 }
+
+export default About

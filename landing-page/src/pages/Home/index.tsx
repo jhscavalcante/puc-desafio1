@@ -2,7 +2,7 @@ import { Layout } from '../../components/Layout'
 import { Register } from '../../components/Register'
 import { Testimonies } from '../../components/Testimonies'
 
-export const Home = () => {
+const Home = () => {
   return (
     <Layout>
       <Register />
@@ -10,3 +10,5 @@ export const Home = () => {
     </Layout>
   )
 }
+
+export default Home

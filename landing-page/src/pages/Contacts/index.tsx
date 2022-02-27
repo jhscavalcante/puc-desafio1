@@ -1,7 +1,7 @@
 import { Layout } from '../../components/Layout'
 import { useTranslation } from 'react-i18next'
 
-export const Contacts = () => {
+const Contacts = () => {
   const { t } = useTranslation()
 
   return (
@@ -12,3 +12,5 @@ export const Contacts = () => {
     </Layout>
   )
 }
+
+export default Contacts
