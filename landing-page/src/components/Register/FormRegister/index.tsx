@@ -1,6 +1,8 @@
-import { ChangeEvent, FormEvent, useEffect, useReducer, useState } from 'react'
+import { ChangeEvent, FormEvent, useReducer, useState } from 'react'
+
 import { User } from '../../../types/User'
 import { useTranslation } from 'react-i18next'
+import { NotifySuccess, NotifyWarn } from 'utils/message'
 
 // Outside the Component Function
 const emailReducer = (
@@ -25,9 +27,6 @@ interface UserProps {
 
 export const FormRegister = (props: UserProps) => {
   const { t } = useTranslation()
-
-  // Show Message Success
-  const [showMessage, setShowMessage] = useState(false)
 
   // Normal state declaration
   const [firstname, setFirstName] = useState('')
@@ -68,39 +67,28 @@ export const FormRegister = (props: UserProps) => {
     event.preventDefault()
 
     if (!isFormValid) {
-      return
+      NotifyWarn(t('register_msg_alert'))
+    } else {
+      const user = {
+        firstname,
+        lastname,
+        password,
+        email: emailState.value
+      }
+
+      props.onSaveUser(user)
+
+      NotifySuccess(t('register_msg_sucess'))
+      setFirstName('')
+      setLastName('')
+      setPassword('')
+      setIsFormValid(false)
+      dispatchEmail({ type: 'FORM_CLEANUP', value: '' })
     }
-
-    const user = {
-      firstname,
-      lastname,
-      password,
-      email: emailState.value
-    }
-
-    props.onSaveUser(user)
-
-    setFirstName('')
-    setLastName('')
-    setPassword('')
-    dispatchEmail({ type: 'FORM_CLEANUP', value: '' })
-    setShowMessage(true)
   }
-
-  useEffect(() => {
-    showMessage &&
-      setTimeout(() => {
-        setShowMessage(false)
-      }, 5000)
-  }, [showMessage])
 
   return (
     <form onSubmit={submitHandler}>
-      {showMessage && (
-        <div className='alert alert-success text-center' role='alert'>
-          Cadastro realizado com sucesso!
-        </div>
-      )}
       <h2 className='text-white fs-5 text-center'>
         {t('register_form_title')}
       </h2>

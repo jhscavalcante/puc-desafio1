@@ -27,6 +27,8 @@
     "register_form_field_email": "Email",
     "register_form_field_password": "Password",
     "register_form_field_btn_save": "Register",
+    "register_msg_sucess": "Registration successfully completed!",
+    "register_msg_alert": "Fill in all fields!",
 
     "services_title": "Services",
 

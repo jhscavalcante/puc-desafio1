@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const Home = React.lazy(() => import('./pages/Home'))
 const About = React.lazy(() => import('./pages/About'))
@@ -8,16 +10,19 @@ const Services = React.lazy(() => import('./pages/Services'))
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <React.Suspense fallback='Loading...'>
-          <Route path='/' exact component={Home} />
-          <Route path='/contatos' component={Contacts} />
-          <Route path='/servicos' component={Services} />
-          <Route path='/sobre' component={About} />
-        </React.Suspense>
-      </Switch>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Switch>
+          <React.Suspense fallback='Loading...'>
+            <Route path='/' exact component={Home} />
+            <Route path='/contatos' component={Contacts} />
+            <Route path='/servicos' component={Services} />
+            <Route path='/sobre' component={About} />
+          </React.Suspense>
+        </Switch>
+      </BrowserRouter>
+      <ToastContainer />
+    </>
   )
 }
 
