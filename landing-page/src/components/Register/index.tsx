@@ -1,14 +1,28 @@
-import { usePost } from '../../hooks/customHooks'
 import { User } from '../../types/User'
 import { FormRegister } from './FormRegister'
 import { useTranslation } from 'react-i18next'
 
+import { useMutation } from '@apollo/client'
+import { CREATE_USER_MUTATION } from 'graphql/Mutation'
+
 export const Register = () => {
   const { t } = useTranslation()
-  const { apiPost } = usePost('/users')
+
+  const [createUser, { error }] = useMutation(CREATE_USER_MUTATION)
 
   const saveUser = async (user: User) => {
-    await apiPost(user)
+    createUser({
+      variables: {
+        firstname: user.firstname,
+        lastname: user.lastname,
+        email: user.email,
+        password: user.password
+      }
+    })
+
+    if (error) {
+      console.log(error)
+    }
   }
 
   return (

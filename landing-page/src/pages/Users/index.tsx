@@ -1,20 +1,22 @@
 import { useEffect, useState } from 'react'
 import { Layout } from '../../components/Layout'
 import { useTranslation } from 'react-i18next'
+import { useQuery } from '@apollo/client'
+import { LOAD_USERS } from 'graphql/Queries'
 import { User } from 'types/User'
-import { useGet } from 'hooks/customHooks'
 
 const Users = () => {
   const { t } = useTranslation()
-
   const [users, setUsers] = useState<User[]>([])
 
   /* eslint-disable @typescript-eslint/no-unused-vars */
-  const { response, loading, error } = useGet<User[]>('/users')
+  const { data, loading, error } = useQuery(LOAD_USERS)
 
   useEffect(() => {
-    if (response) setUsers(response.data)
-  }, [response])
+    if (data) {
+      setUsers(data.getAllUsers)
+    }
+  }, [data])
 
   return (
     <Layout>
